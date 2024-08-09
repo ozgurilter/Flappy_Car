@@ -138,8 +138,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(
                       builder: (context) => Screen(
                         userList: loginStore.userList,
-                        userIndex: userIndex,                                     bv
-                  ).then((_) {
+                        userIndex: userIndex,
+                        gameStore: gameStore,
+                  ),),).then((_) {
                     loginStore.clearFields();
                   });
                 } else {
